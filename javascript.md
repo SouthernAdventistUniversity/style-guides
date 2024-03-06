@@ -1,4 +1,4 @@
-# Javascript Style Guide
+# JavaScript Style Guide
 
 ## Table of Contents
 1. [Formatting](#1-formatting)
