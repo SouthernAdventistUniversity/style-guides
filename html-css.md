@@ -78,10 +78,10 @@ A block component-based building system is used to build Southern's pages. This 
 #### 2.7.1 Element Structure
 Each component should start with a `<southern-component>` element and contain only two elements:
 1. `<component-header>`
-  1. This should contain only one `h2` and one `p` element in that order.
-  2. Can be omitted if the component does not use a header or description.
+    1. This should contain only one `h2` and one `p` element in that order.
+    2. Can be omitted if the component does not use a header or description.
 3. `<component-content>`
-  1. All other component markup should be placed here.
+   1. All other component markup should be placed here.
 
 Example:
 ```html
