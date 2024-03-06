@@ -174,6 +174,8 @@ font-size: 0.8rem;
 ```
 
 ## 4. Southern Components
+**This is NOT implemented yet, but what we will be working towards eventually**
+
 A block component-based building system is used to build Southern's pages. This relies on a consistent HTML structure.
 
 ### 4.1 Element Structure
