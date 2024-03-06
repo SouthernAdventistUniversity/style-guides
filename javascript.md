@@ -47,6 +47,8 @@ Use semicolons after every statement.
 ### 1.5 Indentation
 Indent by 2 spaces at a time.
 
+Do not mix spaces and tabs.
+
 ## 2. Language Features
 
 ### 2.1 Local Variable Declaration
