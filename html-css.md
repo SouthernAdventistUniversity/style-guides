@@ -90,8 +90,16 @@ Example:
 ```
 
 #### 3.1.3 Type Selectors
-Unless necessary (for example with helper classes), do not use element names in conjunction with classes.
+When combined with parent selectors, use element names instead of unnecessary class names.
+```css
+/* Not recommended: if '.list-item' is only applied to li elements inside the parent ul, it is unnecessary */
+.parent-element ul .list-item {}
 
+/* Recommended */
+.parent-element ul li {}
+```
+
+Do not use element names in conjunction with classes unless necessary (for example, with helper classes).
 ```css
 /* Not recommended */
 ul.example {}
@@ -102,22 +110,32 @@ div.error {}
 .error {}
 ```
 
-#### 3.1.4 ID Selectors
+#### 3.1.4 Attribute Selectors
+When using attribute selectors, avoid using quotations unless necessary.
+```css
+/* Not Preferred */
+southern-component[name='hero'] {}
+
+/* Preferred */
+southern-component[name=hero] {}
+```
+
+#### 3.1.5 ID Selectors
 Avoid ID selectors. IDs are expected to appear only once on a page, so name or class selectors should be preferred.
 
 For components: prefer `name` selectors:
 ```css
-southern-component[name=hero]
+southern-component[name=hero] {}
 ```
 
-#### 3.1.5 Units
+#### 3.1.6 Units
 Prefer relative units such as `rem`, `ch`, `vh`. `px` is accepted but not encouraged.
 
 Unless required, do not provide a unit when setting a property to a value of `0`.
 
 [Learn about units](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Values_and_units).
 
-#### 3.1.6 Leading 0s
+#### 3.1.7 Leading 0s
 Always include leading “0”s in values.
 
 Put `0`s in front of values or lengths between -1 and 1.
