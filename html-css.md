@@ -57,7 +57,7 @@ Example:
 ```
 
 ### 2.6 Custom Elements
-Prefer custom elements over `div` elements when it would make describing an area easier.
+Prefer [custom elements](https://developer.mozilla.org/en-US/docs/Web/API/Web_components/Using_custom_elements) over `div` elements when it would better describe an area.
 
 **Important:** Custom elements do not have a `display` styling set by default. To mimic standard `div` behavior, apply `display: block;` to the custom element.
 
@@ -76,4 +76,23 @@ Example:
 A block component-based building system is used to build Southern's pages. This relies on a consistent HTML structure.
 
 #### 2.7.1 Element Structure
-Each component should start with a `<southern-component>` element.
+Each component should start with a `<southern-component>` element and contain only two elements:
+1. `<component-header>`
+  1. This should contain only one `h2` and one `p` element in that order.
+  2. Can be omitted if the component does not use a header or description.
+3. `<component-content>`
+  1. All other component markup should be placed here.
+
+Example:
+```html
+<southern-component name="c02" data-version="standard">
+  <component-header>
+    <h2>Header</h2>
+    <p>Description</p>
+  </component-header>
+  <component-content>
+    ...
+  </component-content>
+</southern-component>
+```
+These three custom elements have base styles applied automatically.
