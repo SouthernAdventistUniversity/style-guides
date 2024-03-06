@@ -41,6 +41,12 @@ Internal whitespace (single ASCII space) should appear in the following places:
 };
 ```
 
+### 1.4 Semicolons
+Use semicolons after every statement.
+
+### 1.5 Indentation
+Indent by 2 spaces at a time.
+
 ## 2. Language Features
 
 ### 2.1 Local Variable Declaration
