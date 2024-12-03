@@ -110,32 +110,22 @@ div.error {}
 .error {}
 ```
 
-#### 3.1.4 Attribute Selectors
-When using attribute selectors, avoid using quotations unless necessary.
-```css
-/* Not Preferred */
-southern-component[name='hero'] {}
-
-/* Preferred */
-southern-component[name=hero] {}
-```
-
-#### 3.1.5 ID Selectors
+#### 3.1.4 ID Selectors
 Avoid ID selectors. IDs are expected to appear only once on a page, so name or class selectors should be preferred.
 
-For components: prefer `name` selectors:
+For components or elements that have a specified purpose, prefer `name` selectors. For example:
 ```css
-southern-component[name=hero] {}
+[name='c02-wysiwyg'] {}
 ```
 
-#### 3.1.6 Units
+#### 3.1.5 Units
 Prefer relative units such as `rem`, `ch`, `vh`. `px` is accepted but not encouraged.
 
 Unless required, do not provide a unit when setting a property to a value of `0`.
 
 [Learn about units](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Values_and_units).
 
-#### 3.1.7 Leading 0s
+#### 3.1.6 Leading 0s
 Always include leading “0”s in values.
 
 Put `0`s in front of values or lengths between -1 and 1.
